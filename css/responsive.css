@@ -164,6 +164,7 @@
         align-items: center;
         width: 100%;
     }
+}
 @media screen and (min-width: 46.25em) and (max-width: 63.9375em) {
     
 }
@@ -214,10 +215,8 @@
         }
     }
 } */
+/* < 767
 
+> 768
 
-/* < 767 */
-
-/* > 768 */
-
-/* > 1024 */
+> 1024  */

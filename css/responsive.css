@@ -89,7 +89,7 @@
     /* block limited */
 
     .limited {
-        margin-top: git5rem;
+        margin-top: 5rem;
     }
     .limited .container{
         flex-direction: column-reverse;
@@ -112,17 +112,18 @@
 
     .limited__content-header{
         font-size: 2rem;
-        color: var(--primary-color);
+        
     }
 
     .limited__content{
         width: 100%;
-        text-align: center;
+        
     }
 
     .limited__footer{
         margin: 1rem 0;
         font-size: 15rem;
+        justify-content: space-evenly;
     }
 
     .limited__footer-item{
@@ -191,21 +192,26 @@
     .about__left h2{
         margin-bottom: 2rem;
     }
+    .about__left-icon{
+        align-items: center;
+        width: 100%;
+    }
 
+    .footer {
+        font-size: 1rem;
+    }
     .footer__sub-left{
         text-align: center;
+        justify-content: center;
     }
     .footer__sub-right{
+        display: none;
         margin-right: 0;
     }
     .footer__sub-right li{
         text-align: center;
     }
 
-    .about__left-icon{
-        align-items: center;
-        width: 100%;
-    }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     .wrapper{

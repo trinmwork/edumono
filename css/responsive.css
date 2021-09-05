@@ -86,6 +86,10 @@
     }
 
     /* block limited */
+
+    .limited {
+        margin-top: 5rem;
+    }
     .limited .container{
         flex-direction: column-reverse;
         align-items: center;
@@ -105,6 +109,11 @@
         height: 100%;
     }
 
+    .limited__content-header{
+        font-size: 2rem;
+        color: var(--primary-color);
+    }
+
     .limited__content{
         width: 100%;
         text-align: center;
@@ -112,10 +121,17 @@
 
     .limited__footer{
         margin: 1rem 0;
+        font-size: 15rem;
     }
 
     .limited__footer-item{
         text-align: center;
+    }
+    .limited__footer-item h2 {
+        font-size: 20px;
+    }
+    .limited__footer-item p {
+        font-size: 10px;
     }
 
     /* university */

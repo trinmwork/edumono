@@ -95,6 +95,7 @@ a {
   color: var(--primary-color);
   border: none;
   background-color: var(--white-color);
+  margin-left: 2rem;
 }
 
 .header__menu-btn button:hover {
@@ -117,7 +118,7 @@ a {
 
 
 .banner__content {
-  margin-top: 20rem;
+  margin-top: 16rem;
   width: 50%;
   font-family: var(--font-family-worksans);
   display: flex;

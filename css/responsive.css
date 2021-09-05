@@ -2,7 +2,7 @@
 @media screen and (max-width: 767px){
     .wrapper{
         max-width: 46.1875em;
-        background-image: none;
+        background-size: contain;
     }
     
     .container{
@@ -30,9 +30,7 @@
         font-size: 2.2rem;
     }
 
-    .mobile__btn i{
-        
-    }
+    
     /* banner */
     .banner{
         width: 100%;
@@ -41,6 +39,7 @@
     .banner__content{
         width: 100%;
         align-items: center;
+        margin-top: 6rem;
     }
     .banner__content-header{
         text-align: center;
@@ -313,6 +312,7 @@
     .about__center-body p{
         margin-bottom: 1rem;
     }
+}
 
 
 /* < 767

@@ -96,6 +96,7 @@ a {
   border: none;
   background-color: var(--white-color);
   margin-left: 2rem;
+  box-shadow: 0rem 0rem 0.3rem 0.3rem #ffc17885;
 }
 
 .header__menu-btn button:hover {

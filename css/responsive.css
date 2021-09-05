@@ -28,6 +28,7 @@
         display: block;
         width: 2rem;
         font-size: 2.2rem;
+        color: var(--primary-color)
     }
 
     
@@ -88,7 +89,7 @@
     /* block limited */
 
     .limited {
-        margin-top: 5rem;
+        margin-top: git5rem;
     }
     .limited .container{
         flex-direction: column-reverse;

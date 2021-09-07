@@ -3,6 +3,7 @@
     .wrapper{
         max-width: 46.1875em;
         background-size: contain;
+        background-image: none;
     }
     
     .container{
@@ -16,7 +17,46 @@
     }
 
     .header__menu{
-        display: none;
+        flex-direction: column;
+        position: fixed;
+        background-color: #ffffff;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 286px;
+        justify-content: start;
+        z-index: 1000;
+        box-shadow: 11px 10px 10px 10px;
+        transform: translateX(100%);
+        transition: all 0.2s linear;
+    }
+
+    .is-open{
+        transform: translateX(0);
+    }
+
+    .header__menu-item{
+        padding: 2rem 0;
+    }
+
+    .menu__mobile{
+        font-size: 2.2rem;
+    }
+
+    .btn__close,
+    .menu__mobile{
+    display: block;
+    color: var(--primary-color);
+}
+
+    .btn__close{
+        margin-right: auto;
+        padding: 20px;
+        font-size: 30px;
+    }
+
+    .header__menu-btn button{
+        margin-left: 0;
     }
 
     .header__logo img{
@@ -24,12 +64,18 @@
         width: auto;
     }
 
-    .mobile__btn{
+    h2{
+        font-size: 2rem;
+    }
+
+    
+
+    /* .mobile__btn{
         display: block;
         width: 2rem;
         font-size: 2.2rem;
         color: var(--primary-color)
-    }
+    } */
 
     
     /* banner */
@@ -43,14 +89,14 @@
         margin-top: 6rem;
     }
     .banner__content-header{
-        text-align: center;
-        font-size: 3rem;
+        
+        font-size: 2.5rem;
         -webkit-line-clamp: 3;
     }
     .banner__content-body{
         width: 100%;
         -webkit-line-clamp: 3;
-        text-align: center;
+        
     }
 
     .banner__content-btn button{
@@ -157,6 +203,7 @@
         margin-left: 0;
     }
 
+    /* block About */
     .about .container{
         flex-direction: column;
         padding-top: 1rem;
@@ -197,6 +244,7 @@
         width: 100%;
     }
 
+    /* block footer */
     .footer {
         font-size: 1rem;
     }
@@ -259,6 +307,8 @@
         margin: 1rem 1rem 0;
     }
 
+
+    /* block limited */
     .limited{
         width: 100%;
     }
@@ -291,10 +341,14 @@
         width: 100%;
         height: 100%;
     }
+
+    /* backgourd */
     .bg{
         display: none;
     }
 
+
+    /* block university */
     .university .container{
         margin-top: 6rem;
     }
@@ -312,6 +366,8 @@
         width: 30%;
     }
 
+
+    /* block About */
     .about__right{
         margin-left: 0;
     }

@@ -14,11 +14,16 @@
         <!-- block banner header -->
         <header class="header">
             <div class="container">
-                <ul class="header__logo">
+                <div class="header__logo">
                     <img src="./img/Logo_header.png" class="header__logo-img" alt="Logo">
-                </ul>
-                
+                </div>
+                <div class="menu__mobile">
+                    <i class="fas fa-bars"></i>
+                </div>
                 <ul class="header__menu">
+                    <li class="btn__close">
+                        <i class="fas fa-times"></i>
+                    </li>
                     <li class="header__menu-item">
                         <a href="#" class="header__menu-link">Study</a>
                     </li>
@@ -367,7 +372,7 @@
             </div>
         </section>
 
-        <input type="checkbox" name="" hidden class="mobile__btn-input"  id="mobile__check">
+        <!-- <input type="checkbox" name="" hidden class="mobile__btn-input"  id="mobile__check">
         <section class="mobile">
             <label for="mobile__check" class="mobile__overlay">
 
@@ -401,16 +406,33 @@
                 
             </ul>
             
-        </section>
+        </section> -->
     </div>
     <!-- <a href="" class="btn btn--primary btn--size-large">Call now</a> -->
+
+
+    <script>
+        const toggleMenu = document.querySelector(".menu__mobile");
+        const closeMenu = document.querySelector(".btn__close");
+        const headerMenu = document.querySelector(".header__menu");
+        const isOpen = "is-open";
+
+        toggleMenu.addEventListener("click", function(){
+            headerMenu.classList.add(isOpen)
+        })
+
+        closeMenu.addEventListener("click", function(){
+            headerMenu.classList.remove(isOpen)
+        })
+
+    </script>
 </body>
 </html>
 
 <!-- Các lỗi còn trong task này -->
 <!-- Chưa làm đúng lội trình ở các box text: Phải làm từ font-size:. line-height...từ trong ra
-     Màu chữ ở footer chưa giống. đã lấy mã màu từ pts nhưng thấy không giống
-     background ở block limit lỗi khi phóng to thu nhỏ trang
+    Màu chữ ở footer chưa giống. đã lấy mã màu từ pts nhưng thấy không giống
+    background ở block limit lỗi khi phóng to thu nhỏ trang
     Coi lại phần BEM để hiểu hơn về cách đặt tên một số block không biết đặt tên ntn
     
 -->
